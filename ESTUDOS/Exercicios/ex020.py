@@ -11,7 +11,7 @@ tema2 = input()
 tema3 = input()
 tema4 = input()
 #desculpa mas eu tinha que fazer isso
-while repetir < 999999999999999999999999999999999999999999999999999999999:
+while True:
     print(f"O {nome1} vai pegar {random.choices([tema1, tema2, tema3, tema4])}")
     print(f"O {nome2} vai pegar {random.choices([tema1, tema2, tema3, tema4])}")
     print(f"O {nome3} vai pegar {random.choices([tema1, tema2, tema3, tema4])}")
