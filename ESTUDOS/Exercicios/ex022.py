@@ -1,0 +1,8 @@
+nome = input("Qual é o seu nome inteiro? ")
+nomeletras = nome.replace(" ", "")
+nomeseparado = nome.split()
+nomeseparado = len(nomeseparado[1])
+print(f"Seu nome em tudo maiusculo fica: {nome.upper()}")
+print(f"Seu nome em tudo minusculo fica: {nome.lower()}")
+print(f"O seu nome tem exatas: {len(nomeletras)} letras")
+print(f"O seu primeiro nome tem exatas: {nomeseparado - 1} letras")
