@@ -1,28 +1,24 @@
-#PRECISO FAZER UM PROGRAMA QUE CRIE E LOGUE A CONTA DO USUARIO LOCAL, OU SEJA, NÃO TEM UM SERVIDOR
-#O USUARIO NÃO PODE FAZER MAIS DE UMA CONTA, TEM QUE USAR A MESMA CONTA
-usuario = None
-senha = None
-usuariologado = False
-while True:
-    escolha = int(input("SISTEMA DE CONTAS \n [1] CRIAR CONTA [2] LOGAR NA CONTA\n"))
-    if escolha == 1:
-        if usuariologado == True:
-            print("Você ja criou conta!")
-        else:
-            usuario = input("Coloque seu novo usuario: ")
-            senha = input("Coloque sua senha: ")
-            print("Pronto! Agora, digite o numero 2 para logar em sua nova conta")
-            usuariologado = True
-    elif escolha == 2:
-        #verificar se usuario digitado é o mesmo que o usuario criado
-        usuariodigitado = input("Usuario: ")
-        senhadigitada = input("Senha: ")
-        if usuariodigitado == usuario and senhadigitada == senha:
-            print("Usuario logado com sucesso")
-            break
-        else:
-            print("USUARIO OU SENHA INCORRETAS")
-    else:
-        print("Comando não entendido, por favor tente novamente")
+nomedigitado = 0
+senhadigitada = 0
+nome1 = 0
+senha1 = 0
+conectado = False
 
-print(f"Bem vindo! {usuario}!")
+while True:
+        print("BEM VINDO AO SISTEMA DE CONTAS, OQUE DESEJA FAZER? /n [1] CRIAR CONTA /n [2] LOGAR NA CONTA")
+        escolhas = int(input())
+        if escolhas == 1:
+            print("Bem vindo a criação de conta, qual nome de usuario vc quer?")
+            nome1 = input()
+            print("Coloque sua senha agora")
+            senha1 = input()
+            print("Pronto! agora é só logar em sua conta!")
+        
+        if escolhas == 2:
+            nomedigitado = print(input("Digite o seu usuario: "))
+            senhadigitada = print(input("Digite a sua senha: "))
+            if nomedigitado == nome1 and senhadigitada == senha1:
+                print("CONTA LOGADA!")
+                conectado = True
+            else:
+                print("USUARIO OU SENHA ERRADAS, TENTE NOVAMENTE!")
